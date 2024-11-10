@@ -22,10 +22,12 @@ public class assignment8 : MonoBehaviour
         // Exercise 2:
         string[] words = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
         int count = 1;
-        int randNum = Random.Range(1, words.Length);
+        int randNum = 0;
+
         string randomSent = "";
-        while (count <= words.Length && words.Length == randNum)
+        while (count == randNum || count <= 7)
         {
+            randNum = Random.Range(1, 7);
             randomSent += words[randNum] + " ";
             count++;
         }
