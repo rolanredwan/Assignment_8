@@ -9,27 +9,27 @@ public class assignment8 : MonoBehaviour
     void Start()
     {
         // Exercise 1:
-        // int count = 1;
-        // while (true)
-        // {
-        //     int randomNum = Random.Range(1, 21);
-        //     Debug.Log(randomNum);
-        //     // count ++;
-        //     if (randomNum == 5) continue;
-        //     if (randomNum == 15) break;
-
+        int count1 = 1;
+        while (true)
+        {
+            int randomNum = Random.Range(1, 21);
+            Debug.Log(randomNum);
+            count1++;
+            if (randomNum == 5) continue;
+            if (randomNum == 15) break;
+        }
         // ----------------------------------------------------------------------------
         // Exercise 2:
         string[] words = { "Cat", "Dog", "Car", "Pizza", "Hat", "Fish", "Tree", "Monkey", "Ball", "Bird" };
-        int count = 1;
+        int count2 = 1;
         int randNum = 0;
 
         string randomSent = "";
-        while (count == randNum || count <= 7)
+        while (count2 == randNum || count2 <= 7)
         {
             randNum = Random.Range(1, 7);
             randomSent += words[randNum] + " ";
-            count++;
+            count2++;
         }
         Debug.Log(randomSent);
     }
